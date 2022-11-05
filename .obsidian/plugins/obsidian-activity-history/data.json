@@ -1,0 +1,57 @@
+{
+  "firstRun": false,
+  "initialized": [
+    {
+      "path": "DDIA",
+      "initialized": true
+    },
+    {
+      "path": "/",
+      "initialized": true
+    }
+  ],
+  "trackedProjects": [
+    "DDIA",
+    "/"
+  ],
+  "checkpointList": [
+    {
+      "path": "DDIA",
+      "date": "2022-11-05",
+      "size": 4026
+    },
+    {
+      "path": "/",
+      "date": "2022-11-05",
+      "size": 4026
+    }
+  ],
+  "activityHistory": [
+    {
+      "path": "DDIA",
+      "size": [
+        {
+          "date": "2022-11-05",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "size": [
+        {
+          "date": "2022-11-05",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "activityColor1": "#c6e48b",
+  "activityColor2": "#7bc96f",
+  "activityColor3": "#239a3b",
+  "activityColor4": "#196127",
+  "textColor": "#000000",
+  "emptyColor": "#ecedf0",
+  "cellRadius": 1,
+  "type": "yearly"
+}
