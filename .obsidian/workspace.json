@@ -77,8 +77,17 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "9d34cee71c041f2c",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -173,7 +182,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f99ccb20246488d3",
+  "active": "9d34cee71c041f2c",
   "lastOpenFiles": [
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "Untitled.md",
