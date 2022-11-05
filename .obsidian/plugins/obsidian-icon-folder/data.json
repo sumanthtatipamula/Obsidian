@@ -5,6 +5,7 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiPaletteFill",
       "RiDisqusLine",
       "RiReactjsFill",
       "RiCloudyFill",
@@ -22,5 +23,6 @@
   "DDIA": "RiDatabase2Fill",
   "AWS": "RiCloudyFill",
   "JS": "RiReactjsFill",
-  "JS/DS": "RiDisqusLine"
+  "JS/DS": "RiDisqusLine",
+  "JS/Patterns": "RiPaletteFill"
 }
