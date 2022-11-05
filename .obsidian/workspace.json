@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "f2fe0edcdb355a86",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a310e35607242db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3d654d11cd0acfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "17c14779ba710540",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e283d05f18d3ee6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f99ccb20246488d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1765a4d1bbc7acd9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "dwindle",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "414a10faab4132cf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b5a8a7850980d5b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "1eee9ca7e38e6d37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80f04302895b4dde",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7dcec2b5d6c37df9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "97101bcee4c2e44b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a6a8dfef2c04959c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
+              }
+            }
+          },
+          {
+            "id": "0ccc1b0f010b14a5",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {}
+            }
+          },
+          {
+            "id": "a3129fae3280517f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bbd24ecca0ff03b1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "a3129fae3280517f",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "images/chapter1.png",
+    "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+    "DDIA/part-1/Chapter-1/images/Figure1-1.png",
+    "2022-11-05.md",
+    "Javascript/Data Structures.md",
+    "Untitled 1.md",
+    "Test.html.md"
+  ]
+}
