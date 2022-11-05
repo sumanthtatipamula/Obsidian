@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiCheckboxBlankCircleLine",
       "RiPaletteFill",
       "RiDisqusLine",
       "RiReactjsFill",
-      "RiCloudyFill",
-      "RiDatabase2Fill"
+      "RiCloudyFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -22,7 +22,8 @@
   },
   "DDIA": "RiDatabase2Fill",
   "AWS": "RiCloudyFill",
-  "JS": "RiReactjsFill",
-  "JS/DS": "RiDisqusLine",
-  "JS/Patterns": "RiPaletteFill"
+  "TS": "RiReactjsFill",
+  "TS/DS": "RiDisqusLine",
+  "TS/Patterns": "RiPaletteFill",
+  "TS/Concepts": "RiCheckboxBlankCircleLine"
 }
