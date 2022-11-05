@@ -153,13 +153,14 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a3d654d11cd0acfb",
+  "active": "97101bcee4c2e44b",
   "lastOpenFiles": [
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "Untitled.md",
