@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#test",
+                "query": "test",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,7 +180,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dff020865d1d916d",
+  "active": "1765a4d1bbc7acd9",
   "lastOpenFiles": [
     "Untitled.md",
     "TS/Concepts/TypeScript Fundamentals.md",
