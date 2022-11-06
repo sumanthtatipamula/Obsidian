@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TS/Concepts/TypeScript Fundamentals.md",
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TS/Concepts/TypeScript Fundamentals.md",
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TS/Concepts/TypeScript Fundamentals.md",
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TS/Concepts/TypeScript Fundamentals.md"
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
               }
             }
           },
@@ -181,8 +181,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f99ccb20246488d3",
+  "active": "cca4ef326054e76b",
   "lastOpenFiles": [
+    "TS/Concepts/TypeScript Fundamentals.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "Untitled.md",
     "images/chapter1.png",
