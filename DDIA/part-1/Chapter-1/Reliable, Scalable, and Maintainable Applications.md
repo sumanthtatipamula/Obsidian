@@ -2,8 +2,8 @@
 1. Why do we need to learn about data systems ?
 	 Increasingly, many applications now have such demanding or wide-ranging requirements that a single tool can no longer meet all of its data processing and storage needs. Instead, the work is broken down into tasks that can be performed efficiently on a single tool, and those different tools are stitched together using application code.
 	 
- Ex: Application-Managed caching layer 
-
+<mark style="background: #BBFABBA6;"> Ex: Application-Managed caching layer 
+</mark>
 [[Figure1-1.png]]
 
 The factors that influence the design of a data system are
