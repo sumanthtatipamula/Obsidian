@@ -6,7 +6,10 @@
 		- breakage around internal code contracts
 	- It serves as the foundation for a great code authoring experience
 		- Ex: In-editor autocomplete
- - 
+
+```js
+console.log("hello")
+```
 	
 
 	

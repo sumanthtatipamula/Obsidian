@@ -11,7 +11,6 @@
   "obsidian-languagetool-plugin",
   "obsidian-activity-history",
   "recent-files-obsidian",
-  "obsidian-day-planner",
   "code-block-copy",
   "obsidian-dictionary-plugin",
   "highlightr-plugin",
@@ -21,7 +20,7 @@
   "convert-url-to-iframe",
   "obsidian-auto-link-title",
   "obsidian-reading-time",
-  "flashcards-obsidian",
   "obsidian-focus-mode",
-  "obsidian-local-images"
+  "obsidian-local-images",
+  "execute-code"
 ]

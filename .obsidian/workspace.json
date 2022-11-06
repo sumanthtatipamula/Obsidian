@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a3d654d11cd0acfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cca4ef326054e76b",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,14 +162,15 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cca4ef326054e76b",
+  "active": "a3129fae3280517f",
   "lastOpenFiles": [
+    "Day Planners/Day Planner-20221106.md",
     "TS/Concepts/TypeScript Fundamentals.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "Untitled.md",

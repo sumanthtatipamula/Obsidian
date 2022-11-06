@@ -3,6 +3,10 @@
     {
       "basename": "Reliable, Scalable, and Maintainable Applications",
       "path": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
+    },
+    {
+      "basename": "TypeScript Fundamentals",
+      "path": "TS/Concepts/TypeScript Fundamentals.md"
     }
   ],
   "omittedPaths": [],
