@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "TS/Concepts/TypeScript Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dwindle",
+                "query": "autocomplete",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "TS/Concepts/TypeScript Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "TS/Concepts/TypeScript Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
+                "file": "TS/Concepts/TypeScript Fundamentals.md"
               }
             }
           },
@@ -176,12 +176,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cca4ef326054e76b",
+  "active": "f99ccb20246488d3",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20221106.md",
+    "Untitled.md",
     "TS/Concepts/TypeScript Fundamentals.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-    "Untitled.md",
+    "Day Planners/Day Planner-20221106.md",
     "images/chapter1.png",
     "DDIA/part-1/Chapter-1/images/Figure1-1.png",
     "2022-11-05.md",

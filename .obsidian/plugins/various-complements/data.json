@@ -46,5 +46,14 @@
     "maxNumberOfHistoryToKeep": 0
   },
   "showLogAboutPerformanceInConsole": false,
-  "selectionHistoryTree": {}
+  "selectionHistoryTree": {
+    "autocomplete": {
+      "autocomplete": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667725372376
+        }
+      }
+    }
+  }
 }
