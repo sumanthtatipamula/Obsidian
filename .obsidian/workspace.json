@@ -18,14 +18,6 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "35635748bb141bbf",
-            "type": "leaf",
-            "state": {
-              "type": "card-board-view",
-              "state": {}
-            }
           }
         ]
       },
@@ -165,14 +157,6 @@
             }
           },
           {
-            "id": "0ccc1b0f010b14a5",
-            "type": "leaf",
-            "state": {
-              "type": "reminder-list",
-              "state": {}
-            }
-          },
-          {
             "id": "a3129fae3280517f",
             "type": "leaf",
             "state": {
@@ -189,14 +173,14 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "cca4ef326054e76b",
+  "active": "dff020865d1d916d",
   "lastOpenFiles": [
     "Untitled.md",
     "TS/Concepts/TypeScript Fundamentals.md",
