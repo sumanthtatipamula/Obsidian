@@ -159,10 +159,9 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 287
   },
-  "active": "cca4ef326054e76b",
+  "active": "bbd24ecca0ff03b1",
   "lastOpenFiles": [
     "TS/Concepts/TypeScript Fundamentals.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
