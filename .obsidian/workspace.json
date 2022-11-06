@@ -18,6 +18,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "35635748bb141bbf",
+            "type": "leaf",
+            "state": {
+              "type": "card-board-view",
+              "state": {}
+            }
           }
         ]
       }
@@ -162,7 +170,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
