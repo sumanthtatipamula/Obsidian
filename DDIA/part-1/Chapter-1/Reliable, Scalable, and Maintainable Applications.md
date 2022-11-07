@@ -65,7 +65,7 @@ The factors that influence the design of a data system are
 		 - **Latency vs Response time**
 			 - Latency : is the duration that a request is waiting to be handled.
 			 - Response Time:  Service Time + Network Delays + Queueing Delays
-				 - Even if same request is made again and again, there will be a difference in response times. Therefore, one can think response time as not a single number, but as a distribution of values that you can measure.
+				 - Even if same request is made again and again, there will be a difference in response times. Therefore, one can think of response time as not a single number, but as a distribution of values that you can measure.
 				 - It is common to use average response time  = (Sum of  n values) / n; however, it doesn't tell how many users actually experienced that delay.
 				 - So it is better to use *percentiles*. 
 					 - If one take lists of response times and sort it from fastest to slowest, then the median is the halfway point:
@@ -85,7 +85,9 @@ The factors that influence the design of a data system are
 		 - Operability
 			 - Make it easy for operations teams to keep the system running smoothly.
 		 - Simplicity
+			 - Make it easy for new engineers to understand the system, by removing as much complexity as possible from the system. (Note this is not the same as simplicity of the user interface.)
 		 - Evolvability
+			 - Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change. Also known as _extensibility_, _modifiability_, or _plasticity_.
 
 
 ## Summary 

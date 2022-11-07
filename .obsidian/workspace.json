@@ -33,24 +33,6 @@
           }
         ],
         "stacked": true
-      },
-      {
-        "id": "ec2e9182aeaf475c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4568d45a62cd8793",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
