@@ -62,7 +62,18 @@ The factors that influence the design of a data system are
 		 - Once load has been described on the system. Now one can investigate what happens when load increases. This can be looked in 2 ways
 			 - When load ↑ and system resources remains unchanged, how is the performance of the system affected ? 
 			 - when load ↑, how much resources needs to be increased in order for performance to remain same ?
-		 - 
+		 - **Latency vs Response time**
+			 - Latency : is the duration that a request is waiting to be handled.
+			 - Response Time:  Service Time + Network Delays + Queueing Delays
+				 - Even if same request is made again and again, there will be a difference in response times. Therefore, one can think response time as not a single number, but as a distribution of values that you can measure.
+				 - It is common to use average response time  = (Sum of  n values) / n; however, it doesn't tell how many users actually experienced that delay.
+				 - So it is better to use *percentiles*. 
+					 - If one take lists of response times and sort it from fastest to slowest, then the median is the halfway point:
+					 - This makes the median a good metric if you want to know how long users typically have to wait: half of user requests are served in less than the median response time, and the other half take longer than the median. The median is also known as the _50th percentile_, and sometimes abbreviated as _p50_.
+					 - **Note**:  that the median refers to a single request;
+				 - In order to figure out how bad your outliers are, you can look at higher percentiles: the _95th_, _99th_, and _99.9th_ percentiles are common (abbreviated _p95_, _p99_, and _p999_).
+					 - If the 95th percentile response time is 1.5 seconds, that means 95 out of 100 requests take less than 1.5 seconds, and 5 out of 100 requests take 1.5 seconds or more.
+					 - These percentiles of response times are called tail latencies
 				 
 					
  - **Maintainability**
