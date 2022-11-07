@@ -73,8 +73,13 @@ The factors that influence the design of a data system are
 					 - **Note**:  that the median refers to a single request;
 				 - In order to figure out how bad your outliers are, you can look at higher percentiles: the _95th_, _99th_, and _99.9th_ percentiles are common (abbreviated _p95_, _p99_, and _p999_).
 					 - If the 95th percentile response time is 1.5 seconds, that means 95 out of 100 requests take less than 1.5 seconds, and 5 out of 100 requests take 1.5 seconds or more.
-					 - These percentiles of response times are called tail latencies
-				 
+					 - These percentiles of response times are called *tail latencies*
+				 - Why it is essential to consider tail latencies ?
+					 - This is because the customers with the slowest requests are often those who have the most data on their accounts because they have made many purchases—that is, they’re the most valuable customers. It’s important to keep those customers happy by ensuring the website is fast for them:
+				 - What is SLA ?
+					 - An SLA may state that the service is considered to be up if it has a median response time of less than 200 ms and a 99th percentile under 1 s (if the response time is longer, it might as well be down), and the service may be required to be up at least 99.9% of the time.
+			
+				  
 					
  - **Maintainability**
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
