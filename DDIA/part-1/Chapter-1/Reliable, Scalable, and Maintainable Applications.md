@@ -85,7 +85,7 @@ The factors that influence the design of a data system are
 		 - Operability
 		 - Simplicity
 		 - Evolvability
-	 - 
+
  
 
 

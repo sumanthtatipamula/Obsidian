@@ -28,4 +28,8 @@
 12. Simplicity:
 	1. Make it easy for new engineers to understand the system, by removing as much complexity as possible from the system.
 13. Evolvability:
-	1. Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change. Also known as _extensibility_, _modifiability_, or _plasticity_.
+	1. Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change. Also known as _extensibility_, _modifiability_, or _plasticity_ 
+14. Functional Requirements 
+	1. What it should do such as allowing data to be stored, retrieved, searched and processed in various ways
+15. Non Functional Requirements 
+	1. security, reliability, compliance, scalability, compatibility, and maintainability
