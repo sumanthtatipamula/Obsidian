@@ -58,6 +58,11 @@ The factors that influence the design of a data system are
 				 - Number of requests per second to a web server 
 				 - ratio of reads to writes in a database.
 				 - Hit rate on a cache
+	 - **Describing Performance** 
+		 - Once load has been described on the system. Now one can investigate what happens when load increases. This can be looked in 2 ways
+			 - When load ↑ and system resources remains unchanged, how is the performance of the system affected ? 
+			 - when load ↑, how much resources needs to be increased in order for performance to remain same ?
+		 - 
 				 
 					
  - **Maintainability**
