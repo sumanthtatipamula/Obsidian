@@ -83,8 +83,29 @@ The factors that influence the design of a data system are
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
 	 - The three design principles for software system are 
 		 - Operability
+			 - Make it easy for operations teams to keep the system running smoothly.
 		 - Simplicity
 		 - Evolvability
+
+
+## Summary 
+1. We need to learn about data systems as many applications these days have a wide range of requirements which can't be met with a single tool.
+2. The factors that influence data systems are
+	1. Reliability 
+	2. Scalability 
+	3. Maintainability 
+3. There is a difference between Fault and Failure, while the former means deviation in behavior; whereas, the latter means stopped working.
+4. There are basically 2 types of faults 
+	1. Hardware faults 
+	2. Software faults 
+		1. Systematic Errors 
+		2. Human Errors
+5. The common practice to measure response time is by doing averaging, but recommended is to go for percentiles.
+6. There are 3 design principles 
+	1. Operability
+	2. Simplicity  
+	3. Evolvability
+
 
  
 

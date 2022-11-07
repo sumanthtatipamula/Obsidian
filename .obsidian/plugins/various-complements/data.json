@@ -98,8 +98,8 @@
     "Scalability": {
       "Scalability": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667804642574
+          "count": 2,
+          "lastUpdated": 1667810113675
         }
       }
     },
@@ -156,6 +156,86 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1667806343963
+        }
+      }
+    },
+    "Summary": {
+      "Summary": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667809971560
+        }
+      }
+    },
+    "tools": {
+      "tools": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810071839
+        }
+      }
+    },
+    "software": {
+      "software": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1667810099816
+        }
+      }
+    },
+    "Reliability": {
+      "Reliability": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810109996
+        }
+      }
+    },
+    "Maintainability": {
+      "Maintainability": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810119782
+        }
+      }
+    },
+    "behavior": {
+      "behavior": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810197448
+        }
+      }
+    },
+    "faults": {
+      "faults": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1667810275710
+        }
+      }
+    },
+    "Errors": {
+      "Errors": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810283534
+        }
+      }
+    },
+    "Operability": {
+      "Operability": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810408606
+        }
+      }
+    },
+    "Simplicity": {
+      "Simplicity": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667810430080
         }
       }
     }
