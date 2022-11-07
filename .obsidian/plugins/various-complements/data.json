@@ -118,6 +118,30 @@
           "lastUpdated": 1667804908321
         }
       }
+    },
+    "Faults": {
+      "Faults": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667805198821
+        }
+      }
+    },
+    "Delays": {
+      "Delays": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667805287163
+        }
+      }
+    },
+    "Percentiles": {
+      "Percentiles": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667805294886
+        }
+      }
     }
   }
 }

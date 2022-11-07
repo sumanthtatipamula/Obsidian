@@ -1,4 +1,6 @@
 ---------
+[[Essential Terms]]
+
 1. Why do we need to learn about data systems ?
 	 Increasingly, many applications now have such demanding or wide-ranging requirements that a single tool can no longer meet all of its data processing and storage needs. Instead, the work is broken down into tasks that can be performed efficiently on a single tool, and those different tools are stitched together using application code.
 	 
@@ -48,8 +50,6 @@ The factors that influence the design of a data system are
 							 - Ex: Could be using versioning system. In case of events of failure, rollback to previous versions helps.
 						 - Set up detailed and clear monitoring, such as performance metrics and error rates.
 							 - Ex: Cloud watch metrics in AWS
-	 - *Failure*:
-		 - when the system as a whole stops providing the required service to the user.
  - **Scalability**
 	 - As the system grows (in data volume or traffic volume) there should be reasonable ways of dealing with the growth.
 	 - **Describing Load**
@@ -79,12 +79,7 @@ The factors that influence the design of a data system are
 				 - What is SLA ?
 					 - An SLA may state that the service is considered to be up if it has a median response time of less than 200 ms and a 99th percentile under 1 s (if the response time is longer, it might as well be down), and the service may be required to be up at least 99.9% of the time.
 	 - **Approaches for Coping With Load**:
-			 - **Terms**
-			
-					
-			
-				  
-					
+			 
  - **Maintainability**
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
  
