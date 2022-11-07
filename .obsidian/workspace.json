@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3d8d3339e12fe566",
+            "id": "cca4ef326054e76b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -28,6 +32,16 @@
         "id": "7e283d05f18d3ee6",
         "type": "tabs",
         "children": [
+          {
+            "id": "ab13017fe352618d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
           {
             "id": "1765a4d1bbc7acd9",
             "type": "leaf",
@@ -52,32 +66,18 @@
             }
           },
           {
-            "id": "ab13017fe352618d",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "2d37ef670662bf49",
             "type": "leaf",
             "state": {
-              "type": "diagram-edit",
-              "state": {
-                "file": "DDIA/part-1/Chapter-1/images/Factors.svg"
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 851.0082740783691,
-    "collapsed": true
+    "width": 451.00827407836914
   },
   "right": {
     "id": "b5a8a7850980d5b0",
@@ -157,44 +157,7 @@
     "width": 287,
     "collapsed": true
   },
-  "floating": {
-    "id": "6ac4342a0a99834a",
-    "type": "floating",
-    "children": [
-      {
-        "id": "55fda604952563dd",
-        "type": "window",
-        "children": [
-          {
-            "id": "3794ab51cb6216b6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "cca4ef326054e76b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -582,
-        "y": -137,
-        "width": 761,
-        "height": 837,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "3d8d3339e12fe566",
+  "active": "ab13017fe352618d",
   "lastOpenFiles": [
     "DDIA/part-1/Chapter-1/images/Factors.svg",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
