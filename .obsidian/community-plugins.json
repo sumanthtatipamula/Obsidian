@@ -19,5 +19,8 @@
   "obsidian-focus-mode",
   "obsidian-local-images",
   "dataview",
-  "search-on-internet"
+  "search-on-internet",
+  "obsidian-outliner",
+  "obsidian-zoom",
+  "mousewheel-image-zoom"
 ]
