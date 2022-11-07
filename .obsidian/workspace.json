@@ -11,29 +11,22 @@
             "id": "cca4ef326054e76b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TS/Concepts/TypeScript Fundamentals.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "7ffd1b94a2944131",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-                "mode": "source",
-                "source": false
+                "file": "DDIA/part-1/Chapter-1/images/Figure1-1.png"
               }
             }
           }
         ],
-        "currentTab": 1,
-        "stacked": true
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,16 +39,6 @@
         "id": "7e283d05f18d3ee6",
         "type": "tabs",
         "children": [
-          {
-            "id": "f99ccb20246488d3",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "1765a4d1bbc7acd9",
             "type": "leaf",
@@ -86,12 +69,23 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "2d37ef670662bf49",
+            "type": "leaf",
+            "state": {
+              "type": "diagram-edit",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/images/Untitled Diagram.svg"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 899.5082740783691
   },
   "right": {
     "id": "b5a8a7850980d5b0",
@@ -107,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "DDIA/part-1/Chapter-1/images/Untitled Diagram.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "DDIA/part-1/Chapter-1/images/Untitled Diagram.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
+                "file": "DDIA/part-1/Chapter-1/images/Untitled Diagram.svg"
               }
             }
           },
@@ -175,17 +169,17 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "7ffd1b94a2944131",
+  "active": "2d37ef670662bf49",
   "lastOpenFiles": [
-    "TS/Concepts/TypeScript Fundamentals.md",
+    "DDIA/part-1/Chapter-1/images/Figure1-1.png",
+    "DDIA/part-1/Chapter-1/images/Untitled Diagram.svg",
+    "Untitled Diagram.svg",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+    "TS/Concepts/TypeScript Fundamentals.md",
+    "2022-11-07.md",
     "Untitled.md",
     "Day Planners/Day Planner-20221106.md",
     "images/chapter1.png",
-    "DDIA/part-1/Chapter-1/images/Figure1-1.png",
-    "2022-11-05.md",
-    "Javascript/Data Structures.md",
-    "Untitled 1.md",
-    "Test.html.md"
+    "2022-11-05.md"
   ]
 }
