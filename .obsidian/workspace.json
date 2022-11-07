@@ -32,7 +32,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Essential Terms.md",
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Essential Terms.md",
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Essential Terms.md"
+                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
               }
             }
           },
@@ -176,10 +175,10 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "b035d2a0df33411e",
+  "active": "682a8043c81e36be",
   "lastOpenFiles": [
-    "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "DDIA/part-1/Chapter-1/Essential Terms.md",
+    "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "DDIA/part-1/Chapter-1/images/Factors.svg",
     "DDIA/part-1/Chapter-1/images/Figure1-1.png",
     "Untitled Diagram.svg",

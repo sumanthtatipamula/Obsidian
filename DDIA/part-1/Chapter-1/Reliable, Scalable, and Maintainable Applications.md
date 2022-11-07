@@ -78,10 +78,14 @@ The factors that influence the design of a data system are
 					 - This is because the customers with the slowest requests are often those who have the most data on their accounts because they have made many purchases—that is, they’re the most valuable customers. It’s important to keep those customers happy by ensuring the website is fast for them:
 				 - What is SLA ?
 					 - An SLA may state that the service is considered to be up if it has a median response time of less than 200 ms and a 99th percentile under 1 s (if the response time is longer, it might as well be down), and the service may be required to be up at least 99.9% of the time.
-	 - **Approaches for Coping With Load**:
 			 
  - **Maintainability**
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
+	 - The three design principles for software system are 
+		 - Operability
+		 - Simplicity
+		 - Evolvability
+	 - 
  
 
 
