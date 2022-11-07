@@ -82,12 +82,11 @@
             "id": "2d37ef670662bf49",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,7 +170,7 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "2d37ef670662bf49",
+  "active": "ab13017fe352618d",
   "lastOpenFiles": [
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "DDIA/part-1/Chapter-1/Essential Terms.md",
@@ -179,7 +178,7 @@
     "DDIA/part-1/Chapter-1/images/Figure1-1.png",
     "Untitled Diagram.svg",
     "TS/Concepts/TypeScript Fundamentals.md",
-    "2022-11-07.md",
+    "Day Tracking/2022-11-07.md",
     "Untitled.md",
     "Day Planners/Day Planner-20221106.md",
     "images/chapter1.png"
