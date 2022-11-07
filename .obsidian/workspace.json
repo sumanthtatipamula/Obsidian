@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "682a8043c81e36be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DDIA/part-1/Chapter-1/Terms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "DDIA/part-1/Chapter-1/Terms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+                "file": "DDIA/part-1/Chapter-1/Terms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md"
+                "file": "DDIA/part-1/Chapter-1/Terms.md"
               }
             }
           },
@@ -161,10 +174,10 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "ab13017fe352618d",
+  "active": "682a8043c81e36be",
   "lastOpenFiles": [
-    "DDIA/part-1/Chapter-1/images/Factors.svg",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+    "DDIA/part-1/Chapter-1/images/Factors.svg",
     "DDIA/part-1/Chapter-1/images/Figure1-1.png",
     "Untitled Diagram.svg",
     "TS/Concepts/TypeScript Fundamentals.md",

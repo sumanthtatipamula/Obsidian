@@ -40,12 +40,12 @@ The factors that influence the design of a data system are
 					 - How do we make our systems reliable, in spite of unreliable humans? 
 						 - Design systems in a way that minimizes opportunities for error.
 						 - Decouple the places where people make the most mistakes from the places where they can cause failures
-							 - Provide sandbox to play around
+							 - provide a sandbox to play around
 						 - Test thoroughly at all levels, from unit tests to whole-system integration tests and manual tests.
 							 - Automated testing
 						 - Implement good management practices and training
-						 - Allow quick and easy recovery from human errors, to minimize the impact in the case of a failure
-							 - Ex: Could be using versioning system. In case of events of failure rollback to previous versions helps.
+						 - allow quick and easy recovery from human errors, to minimize the impact in the case of a failure
+							 - Ex: Could be using versioning system. In case of events of failure, rollback to previous versions helps.
 						 - Set up detailed and clear monitoring, such as performance metrics and error rates.
 							 - Ex: Cloud watch metrics in AWS
 	 - *Failure*:
@@ -78,9 +78,16 @@ The factors that influence the design of a data system are
 					 - This is because the customers with the slowest requests are often those who have the most data on their accounts because they have made many purchases—that is, they’re the most valuable customers. It’s important to keep those customers happy by ensuring the website is fast for them:
 				 - What is SLA ?
 					 - An SLA may state that the service is considered to be up if it has a median response time of less than 200 ms and a 99th percentile under 1 s (if the response time is longer, it might as well be down), and the service may be required to be up at least 99.9% of the time.
+	 - **Approaches for Coping With Load**:
+			 - **Terms**
+			
+					
 			
 				  
 					
  - **Maintainability**
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
  
+
+
+
