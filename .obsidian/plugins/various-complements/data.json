@@ -54,6 +54,22 @@
           "lastUpdated": 1667725372376
         }
       }
+    },
+    "system": {
+      "system": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667802095529
+        }
+      }
+    },
+    "server": {
+      "server": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667802159559
+        }
+      }
     }
   }
 }

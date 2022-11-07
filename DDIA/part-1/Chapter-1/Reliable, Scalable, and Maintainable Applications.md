@@ -52,6 +52,14 @@ The factors that influence the design of a data system are
 		 - when the system as a whole stops providing the required service to the user.
  - **Scalability**
 	 - As the system grows (in data volume or traffic volume) there should be reasonable ways of dealing with the growth.
+	 - **Describing Load**
+		 - Load is described by what is known as load parameters
+			 - Parameters depends on the architecture of the system It could be:
+				 - Number of requests per second to a web server 
+				 - ratio of reads to writes in a database.
+				 - Hit rate on a cache
+				 
+					
  - **Maintainability**
 	 - Overtime, many different people will work on the system, and they should all be able to work on it productively.
  
