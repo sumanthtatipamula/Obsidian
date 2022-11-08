@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bff1aa35d41d7ce2",
+            "id": "30f2cea6ee0b1f19",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,17 +162,17 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "bff1aa35d41d7ce2",
+  "active": "30f2cea6ee0b1f19",
   "lastOpenFiles": [
-    "Design Patterns/Creational/Singleton/Untitled.md",
+    "Design Patterns/Creational/Factory/Factory.md",
     "Design Patterns/Creational/Singleton/Singleton.md",
+    "Design Patterns/Creational/Singleton/Untitled.md",
     "Design Patterns/Creational/Creational Design Patterns Intro.md",
     "DayTracking/2022-11-08.md",
     "DayTracking/2022-11-07.md",
     "Day Tracking/2022-11-07.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
     "DDIA/part-1/Chapter-1/Essential Terms.md",
-    "DDIA/part-1/Chapter-1/images/Factors.svg",
-    "DDIA/part-1/Chapter-1/images/Figure1-1.png"
+    "DDIA/part-1/Chapter-1/images/Factors.svg"
   ]
 }
