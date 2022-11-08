@@ -25,3 +25,4 @@
 	   1. The static member representing the singleton should be private
 	   2. Constructors are private
 	   3. Access to the instance via a static public getter
+

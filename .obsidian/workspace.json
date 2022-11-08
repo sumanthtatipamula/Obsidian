@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Patterns/Creational/Singleton/Singleton.md",
+                "file": "Design Patterns/Creational/Factory/Factory.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/Creational/Singleton/Singleton.md",
+                "file": "Design Patterns/Creational/Factory/Factory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/Creational/Singleton/Singleton.md",
+                "file": "Design Patterns/Creational/Factory/Factory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/Creational/Singleton/Singleton.md"
+                "file": "Design Patterns/Creational/Factory/Factory.md"
               }
             }
           },
@@ -164,15 +164,15 @@
   },
   "active": "30f2cea6ee0b1f19",
   "lastOpenFiles": [
-    "Design Patterns/Creational/Factory/Factory.md",
     "Design Patterns/Creational/Singleton/Singleton.md",
+    "Design.md",
+    "Design Patterns/Creational/Factory/Factory.md",
     "Design Patterns/Creational/Singleton/Untitled.md",
     "Design Patterns/Creational/Creational Design Patterns Intro.md",
     "DayTracking/2022-11-08.md",
     "DayTracking/2022-11-07.md",
     "Day Tracking/2022-11-07.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
-    "DDIA/part-1/Chapter-1/Essential Terms.md",
-    "DDIA/part-1/Chapter-1/images/Factors.svg"
+    "DDIA/part-1/Chapter-1/Essential Terms.md"
   ]
 }
