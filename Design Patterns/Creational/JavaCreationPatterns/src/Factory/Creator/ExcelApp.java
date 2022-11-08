@@ -1,4 +1,4 @@
-package Factory;
+package Factory.Creator;
 
-public class ExcelApp extends OfficeApp{
+public class ExcelApp extends OfficeApp {
 }
