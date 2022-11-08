@@ -851,29 +851,3 @@ public class ChicagoPizzaIngredientFactory
         return new FrozenClams();
     }
 }
-
-![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0167-01.png)
-
-# ![Inline](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/design.png) Design Patterns Crossword Solution
-
-It’s been a long chapter. Grab a slice of Pizza and relax while doing this crossword; all of the solution words are from this chapter. Here’s the solution.
-
-![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0168-01.png)
-
-table of contents
-
-search
-
-Settings
-
-queue
-
-back
-
--   [Support](https://www.oreilly.com/online-learning/support/)
--   [Sign Out](https://learning.oreilly.com/member/logout/)
-
-©2022 O'REILLY MEDIA, INC. 
-
--   [TERMS OF SERVICE](https://www.oreilly.com/terms/)
--   [PRIVACY POLICY](https://learning.oreilly.com/privacy)
