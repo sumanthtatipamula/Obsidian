@@ -16,4 +16,7 @@
 
 ### Applicability:
 1.	Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
-	1.	Eg : Consider Notification service that provides 3 different services say SMS, MAIL, PUSH. instead of exposing each of the concrete class we can expose a Notification Service Factory class and a 
+	1.	Ex : Consider Notification service that provides 3 different services say SMS, MAIL, PUSH. instead of exposing each of the concrete class we can expose a Abstract Notification Service Factory class with a Factory Method which takes type of argument and return concrete Notification service on which 3rd party user can perform actions.[Factory method design pattern in Java - GeeksforGeeks](https://www.geeksforgeeks.org/factory-method-design-pattern-in-java/)
+		1.	Advantages : 
+			1.	Code Reusability 
+			2.	Abstraction
