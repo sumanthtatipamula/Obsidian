@@ -13,4 +13,7 @@
 5. Eg: Microsoft Office which contains Microsoft Excel, PPT, World
 	1. Parent will be general application office
 	2. Specific application will be word ppt etc.
-6. 
+
+### Applicability:
+1.	Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
+	1.	Eg : Consider Notification service that provides 3 different services say SMS, MAIL, PUSH. instead of exposing each of the concrete class we can expose a Notification Service Factory class and a 
