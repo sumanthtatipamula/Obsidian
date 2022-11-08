@@ -9,3 +9,8 @@
 	1.  `Creator` - Define an abstract method in the parent creator, this method is mean to return a reference to the client object.
 	2. `product = FactoryMethod()` Call that abstract method instead of the product constructor whenever it's needed.
 	3. `return new ConcreteProduct` The subclasses of the Creator implements the factory method with a call to the constructor of the Product subtype that it wishes to.
+4. Document Example![[Pasted image 20221108080457.png]]
+5. Eg: Microsoft Office which contains Microsoft Excel, PPT, World
+	1. Parent will be general application office
+	2. Specific application will be word ppt etc.
+6. 
