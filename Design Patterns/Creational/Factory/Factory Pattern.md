@@ -3,7 +3,7 @@
 # Chapter 4. Baking with OO Goodness: The Factory Pattern
 
 
-## Identifying the aspects that vary
+# Identifying the aspects that vary
 
 Let’s say you have a pizza shop, and as a cutting-edge pizza store owner in Objectville you might end up writing some code like this:
 
@@ -43,7 +43,7 @@ We’ll start with the factory itself. What we’re going to do is define a clas
 
 ![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0115-01.png)
 
-# there are no Dumb Questions
+# There are no Dumb Questions
 
 **Q: What’s the advantage of this? It looks like we’re just pushing the problem off to another object.**
 
@@ -57,7 +57,7 @@ And, don’t forget, we’re also just about to remove the concrete instantiatio
 
 **A:** Defining a simple factory as a static method is a common technique and is often called a static factory. Why use a static method? Because you don’t need to instantiate an object to make use of the create method. But it also has the disadvantage that you can’t subclass and change the behavior of the create method.
 
-# Reworking the PizzaStore class
+# Reworking the Pizza Store class
 
 Now it’s time to fix up our client code. What we want to do is rely on the factory to create the pizzas for us. Here are the changes:
 
@@ -66,10 +66,6 @@ Now it’s time to fix up our client code. What we want to do is rely on the fac
 ##### ![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/brain.png) BRAIN POWER
 
 We know that object composition allows us to change behavior dynamically at runtime (among other things) because we can swap in and out implementations. How might we be able to use that in the PizzaStore? What factory implementations might we be able to swap in and out?
-
-###### NOTE
-
-We don’t know about you, but we’re thinking New York, Chicago, and California style pizza factories (let’s not forget New Haven, too).
 
 # The Simple Factory defined
 
@@ -82,6 +78,57 @@ Just because Simple Factory isn’t a REAL pattern doesn’t mean we shouldn’t
 ![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0117-02.png)
 
 Think of Simple Factory as a warm-up. Next, we’ll explore two heavy-duty patterns that are both factories. But don’t worry, there’s more pizza to come!
+
+### Codes
+``` java
+public class PizzaStore {  
+    SimplePizzaFactory factory;  
+    PizzaStore(SimplePizzaFactory factory){  
+        this.factory = factory;  
+    }  
+    public Pizza orderPizza(String type){  
+        Pizza pizza;  
+        pizza = factory.createPizza(type);  
+        pizza.prepare();  
+        pizza.bake();  
+        pizza.cut();  
+        pizza.box();  
+        return pizza;  
+    }  
+}
+```
+
+``` java
+
+public class SimplePizzaFactory {  
+    public Pizza createPizza(String type) {  
+        Pizza pizza = null;  
+        if(type.equals("cheese")){  
+            pizza =  new CheesePizza();  
+        }  
+        else if(type.equals("pepperoni")){  
+            pizza =  new PepperoniPizza();  
+        }  
+        else if(type.equals("clam")){  
+            pizza = new ClamPizza();  
+        }  
+        else if(type.equals("veggie")){  
+            pizza = new VeggiePizza();  
+        }  
+        return pizza;  
+    }  
+}
+```
+ 
+``` java  
+public interface Pizza {  
+    void prepare();  
+    void bake();  
+    void cut();  
+    void box();  
+}
+```
+
 
 ###### NOTE
 

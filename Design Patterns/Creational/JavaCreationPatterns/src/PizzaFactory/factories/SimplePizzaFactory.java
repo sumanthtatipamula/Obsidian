@@ -1,4 +1,6 @@
-package PizzaFactory;
+package PizzaFactory.factories;
+
+import PizzaFactory.*;
 
 public class SimplePizzaFactory {
     public Pizza createPizza(String type) {
