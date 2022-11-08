@@ -697,7 +697,7 @@ Good catch! Yes, often the methods of an Abstract Factory are implemented as fac
 
 **Abstract Factory:** That’s true; my interface has to change if new products are added, which I know people don’t like to do....
 
-**Factory Method:** <snicker>
+**Factory Method:** snicker
 
 **Abstract Factory:** What are you snickering at, Factory Method?
 
@@ -820,6 +820,7 @@ Let’s pretend you’ve never heard of an OO factory. Here’s a “very depend
 
 Go ahead and write the ChicagoPizzaIngredientFactory; you can reference the classes below in your implementation:
 
+``` java
 public class ChicagoPizzaIngredientFactory
     implements PizzaIngredientFactory
 {
@@ -851,3 +852,12 @@ public class ChicagoPizzaIngredientFactory
         return new FrozenClams();
     }
 }
+```
+
+![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0167-01.png)
+
+# ![Inline](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/design.png) Design Patterns Crossword Solution
+
+It’s been a long chapter. Grab a slice of Pizza and relax while doing this crossword; all of the solution words are from this chapter. Here’s the solution.
+
+![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0168-01.png)
