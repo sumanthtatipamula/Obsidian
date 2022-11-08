@@ -1,4 +1,4 @@
-package SimplePizzaFactory;
+package PizzaFactory;
 
 public class VeggiePizza implements Pizza{
     @Override

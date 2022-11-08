@@ -1,6 +1,8 @@
-package SimplePizzaFactory;
+package PizzaFactory;
 
-public class ClamPizza implements Pizza{
+import PizzaFactory.Pizza;
+
+public class ClamPizza implements Pizza {
     @Override
     public void prepare() {
         System.out.println("Preparing Clam pizza");

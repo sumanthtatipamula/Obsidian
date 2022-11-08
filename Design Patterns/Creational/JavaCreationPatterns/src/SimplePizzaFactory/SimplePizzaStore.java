@@ -2,9 +2,9 @@ package SimplePizzaFactory;
 
 import SimplePizzaFactory.factories.SimplePizzaFactory;
 
-public class PizzaStore {
+public class SimplePizzaStore {
     SimplePizzaFactory factory;
-    PizzaStore(SimplePizzaFactory factory){
+    SimplePizzaStore(SimplePizzaFactory factory){
         this.factory = factory;
     }
     public Pizza orderPizza(String type){
