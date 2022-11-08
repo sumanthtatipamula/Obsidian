@@ -1,4 +1,5 @@
 package Factory.Product;
 
-public class Document {
+public abstract class Document {
+    public abstract void open();
 }

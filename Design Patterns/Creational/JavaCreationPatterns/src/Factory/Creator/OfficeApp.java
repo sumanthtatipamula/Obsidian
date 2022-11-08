@@ -1,7 +1,10 @@
 package Factory.Creator;
 
-public class OfficeApp {
-    public void  newDocument(){
+import Factory.Product.Document;
 
+public abstract class OfficeApp {
+    public abstract Document documentFactory();
+    public void  newDocument(){
+        Document doc;
     }
 }
