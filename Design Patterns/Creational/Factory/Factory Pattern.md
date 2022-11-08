@@ -73,7 +73,7 @@ We don’t know about you, but we’re thinking New York, Chicago, and Californi
 
 # The Simple Factory defined
 
-The Simple Factory isn’t actually a Design Pattern; it’s more of a programming idiom. But it is commonly used, so we’ll give it a Head First Pattern Honorable Mention. Some developers do mistake this idiom for the Factory Pattern, but the next time that happens you can subtly show you know your stuff; just don’t strut as you educate them on the distinction.
+<mark style="background: #FF5582A6;">The Simple Factory isn’t actually a Design Pattern; it’s more of a programming idiom. </mark>But it is commonly used, so we’ll give it a Head First Pattern Honorable Mention. Some developers do mistake this idiom for the Factory Pattern, but the next time that happens you can subtly show you know your stuff; just don’t strut as you educate them on the distinction.
 
 ![Images](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0117-01.png)
 
