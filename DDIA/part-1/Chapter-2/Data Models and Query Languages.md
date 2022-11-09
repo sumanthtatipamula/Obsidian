@@ -54,11 +54,11 @@ There are <mark style="background: #BBFABBA6;">several driving forces</mark> beh
 -   Frustration with the restrictiveness of relational schemas, and a desire for a more dynamic and expressive data model
     
 
-Different applications have different requirements, and the best choice of technology for one use case may well be different from the best choice for another use case. It therefore seems likely that in the foreseeable future, relational databases will continue to be used alongside a broad variety of nonrelational datastores—an idea that is sometimes called _polyglot persistence_ [[3](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#nosql-distilled)].
+Different applications have different requirements, and the best choice of technology for one use case may well be different from the best choice for another use case. It therefore seems likely that in the foreseeable future, relational databases will continue to be used alongside a broad variety of nonrelational datastores—an idea that is sometimes called _polyglot persistence_ 
 
 ## The Object-Relational Mismatch
 
-Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model: if data is stored in relational tables, an awkward translation layer is required between the objects in the application code and the database model of tables, rows, and columns. The disconnect between the models is sometimes called an _impedance mismatch_.[i](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#idm45085118944976)
+Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model: if data is stored in relational tables, an awkward translation layer is required between the objects in the application code and the database model of tables, rows, and columns. The disconnect between the models is sometimes called an _impedance mismatch_.
 
 Object-relational mapping (ORM) frameworks like ActiveRecord and Hibernate reduce the amount of boilerplate code required for this translation layer, but they can’t completely hide the differences between the two models.
 
