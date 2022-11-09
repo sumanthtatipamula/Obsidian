@@ -27,7 +27,7 @@ In this chapter we will look at a range of general-purpose data models for data 
 
 # Relational Model Versus Document Model
 
-The best-known data model today is probably that of SQL, based on the relational model proposed by Edgar Codd in 1970 [[1](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#Codd1970dg)]: data is organized into _relations_ (called _tables_ in SQL), where each relation is an unordered collection of _tuples_ (_rows_ in SQL).
+<mark style="background: #FF5582A6;">The best-known data model today is probably that of SQL, based on the relational model proposed by Edgar Codd in 1970: data is organized into _relations_ (called _tables_ in SQL), where each relation is an unordered collection of _tuples_ (_rows_ in SQL).</mark>
 
 The relational model was a theoretical proposal, and many people at the time doubted whether it could be implemented efficiently. However, by the mid-1980s, relational database management systems (RDBMSes) and SQL had become the tools of choice for most people who needed to store and query data with some kind of regular structure. The dominance of relational databases has lasted around 25‒30 years—an eternity in computing history.
 
@@ -35,15 +35,15 @@ The roots of relational databases lie in _business data processing_, which was 
 
 Other databases at that time forced application developers to think a lot about the internal representation of the data in the database. The goal of the relational model was to hide that implementation detail behind a cleaner interface.
 
-Over the years, there have been many competing approaches to data storage and querying. In the 1970s and early 1980s, the _network model_ and the _hierarchical model_ were the main alternatives, but the relational model came to dominate them. Object databases came and went again in the late 1980s and early 1990s. XML databases appeared in the early 2000s, but have only seen niche adoption. Each competitor to the relational model generated a lot of hype in its time, but it never lasted [[2](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#Stonebraker2005wv)].
+Over the years, there have been many competing approaches to data storage and querying. In the 1970s and early 1980s, the _network model_ and the _hierarchical model_ were the main alternatives, but the relational model came to dominate them. Object databases came and went again in the late 1980s and early 1990s. XML databases appeared in the early 2000s, but have only seen niche adoption. Each competitor to the relational model generated a lot of hype in its time, but it never lasted.
 
 As computers became vastly more powerful and networked, they started being used for increasingly diverse purposes. And remarkably, relational databases turned out to generalize very well, beyond their original scope of business data processing, to a broad variety of use cases. Much of what you see on the web today is still powered by relational databases, be it online publishing, discussion, social networking, ecommerce, games, software-as-a-service productivity applications, or much more.
 
 ## The Birth of NoSQL
 
-Now, in the 2010s, _NoSQL_ is the latest attempt to overthrow the relational model’s dominance. The name “NoSQL” is unfortunate, since it doesn’t actually refer to any particular technology—it was originally intended simply as a catchy Twitter hashtag for a meetup on open source, distributed, nonrelational databases in 2009 [[3](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#nosql-distilled)]. Nevertheless, the term struck a nerve and quickly spread through the web startup community and beyond. A number of interesting database systems are now associated with the #NoSQL hashtag, and it has been retroactively reinterpreted as _Not Only SQL_
+Now, in the 2010s, _NoSQL_ is the latest attempt to overthrow the relational model’s dominance. The name “NoSQL” is unfortunate, since it doesn’t actually refer to any particular technology—it was originally intended simply as a catchy Twitter hashtag for a meetup on open source, distributed, nonrelational databases in 2009. Nevertheless, the term struck a nerve and quickly spread through the web startup community and beyond. A number of interesting database systems are now associated with the #NoSQL hashtag, and it has been retroactively reinterpreted as _Not Only SQL_
 
-There are several driving forces behind the adoption of NoSQL databases, including:
+There are <mark style="background: #BBFABBA6;">several driving forces</mark> behind the adoption of NoSQL databases, including:
 
 -   A need for greater scalability than relational databases can easily achieve, including very large datasets or very high write throughput
     
