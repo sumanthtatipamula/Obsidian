@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
+                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.00827407836914
+    "width": 451.00827407836914,
+    "collapsed": true
   },
   "right": {
     "id": "b5a8a7850980d5b0",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
+                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
+                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md"
+                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md"
               }
             }
           },
@@ -176,15 +177,15 @@
   },
   "active": "40c4d2eaa9ea134e",
   "lastOpenFiles": [
+    "Design Patterns/Creational/Factory/Summary.md",
     "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
-    "Design Patterns/Creational/Factory/Undefined.md",
+    "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
     "media/ddia_0206.png",
     "media/ddia_0205.png",
     "media/ddia_0203.png",
     "media/ddia_0202.png",
     "media/ddia_0201.png",
     "DDIA/part-1/Chapter-2/Summary.md",
-    "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
     "Design Patterns/Creational/Creational Design Patterns Intro.md"
   ]
 }

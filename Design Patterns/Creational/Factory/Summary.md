@@ -1,4 +1,4 @@
-### Code Snippets
+### Code Snippets For Simple Factory
 ``` java
 public class PizzaStore {  
     SimplePizzaFactory factory;  
