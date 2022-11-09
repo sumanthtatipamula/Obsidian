@@ -20,4 +20,4 @@
 	5. Removing such duplication is the key idea behind _normalization_ in databases.
 9. In Document Model support for joins are often weak and joins are not needed for one-to-many relationship
 10. IBM IMS data model is based on hierarchical model, which has some remarkable similarities to the JSON model used by document databases.
-	1. It worked well for one-to-many relationships 
+	1. It worked well for one-to-many relationships but not for many-to-many relationships

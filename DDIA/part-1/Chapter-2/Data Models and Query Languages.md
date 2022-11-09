@@ -185,15 +185,14 @@ The most popular database for business data processing in the 1970s was IBM’s�
 
 The design of IMS used a fairly simple data model called the _hierarchical model_, which has some remarkable similarities to the JSON model used by document databases. It represented all data as a tree of records nested within records, much like the JSON structure of [Figure 2-2](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_json_tree).
 
-Like document databases, IMS worked well for one-to-many relationships, but it made many-to-many relationships difficult, and it didn’t support joins. Developers had to decide whether to duplicate (denormalize) data or to manually resolve references from one record to another. These problems of the 1960s and ’70s were very much like the problems that developers are running into with document databases today [[15](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#Mei2013vz)].
-
+Like document databases, IMS worked well for one-to-many relationships, but it made many-to-many relationships difficult, and it didn’t support joins. Developers had to decide whether to duplicate (denormalize) data or to manually resolve references from one record to another. These problems of the 1960s and ’70s were very much like the problems that developers are running into with document databases today.
 Various solutions were proposed to solve the limitations of the hierarchical model. The two most prominent were the _relational model_ (which became SQL, and took over the world) and the _network model_ (which initially had a large following but eventually faded into obscurity). The “great debate” between these two camps lasted for much of the 1970s [[2](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#Stonebraker2005wv)].
 
 Since the problem that the two models were solving is still so relevant today, it’s worth briefly revisiting this debate in today’s light.
 
 ### The network model
 
-The network model was standardized by a committee called the Conference on Data Systems Languages (CODASYL) and implemented by several different database vendors; it is also known as the _CODASYL model_ [[16](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#Knowles1984tm)].
+The network model was standardized by a committee called the Conference on Data Systems Languages (CODASYL) and implemented by several different database vendors; it is also known as the _CODASYL model_.
 
 The CODASYL model was a generalization of the hierarchical model. In the tree structure of the hierarchical model, every record has exactly one parent; in the network model, a record could have multiple parents. For example, there could be one record for the `"Greater Seattle Area"` region, and every user who lived in that region could be linked to it. This allowed many-to-one and many-to-many relationships to be modeled.
 
