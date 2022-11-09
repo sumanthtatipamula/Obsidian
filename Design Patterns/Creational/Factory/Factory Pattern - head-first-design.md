@@ -1,27 +1,62 @@
------
-
 # Chapter 4. Baking with OO Goodness: The Factory Pattern
 
+![Images](media/Images-22.png)
+
+**Get ready to bake some loosely coupled OO designs.** There is more to making objects than just using the **new** operator. You’ll learn that instantiation is an activity that shouldn’t always be done in public and can often lead to _coupling problems_. And we don’t want _that_, do we? Find out how Factory Patterns can help save you from embarrassing dependencies.
+
+![Images](media/Images-23.png)
+
+**When you see “new,” think “concrete.”**
+
+Yes, when you use the **new** operator you are certainly instantiating a concrete class, so that’s definitely an implementation and not an interface. And you make a good observation: that tying your code to a concrete class can make it more fragile and less flexible.
+
+![Images](media/Images-19.png)
+
+When we have a whole set of related concrete classes, often we end up writing code like this:
+
+![Images](media/Images-35.png)
+
+Here we’ve got several concrete classes being instantiated, and the decision of which to instantiate is made at runtime depending on some set of conditions.
+
+When you see code like this, you know that when it comes time for changes or extensions, you’ll have to reopen this code and examine what needs to be added (or deleted). Often this kind of code ends up in several parts of the application, making maintenance and updates more difficult and error-prone.
+
+![Images](media/Images-20.png)
+
+**What’s wrong with “new”?**
+
+Technically there’s nothing wrong with the **new** operator. After all, it’s a fundamental part of most modern object-oriented languages. The real culprit is our old friend CHANGE and how change impacts our use of **new**.
+
+By coding to an interface, you know you can insulate yourself from many of the changes that might happen to a system down the road. Why? If your code is written to an interface, then it will work with any new classes implementing that interface through polymorphism. However, when you have code that makes use of lots of concrete classes, you’re looking for trouble because that code may have to be changed as new concrete classes are added. So, in other words, your code will not be “closed for modification.” To extend your code with new concrete types, you’ll have to reopen it.
+
+###### NOTE
+
+Remember that designs should be “open for extension but closed for modification.” See [Chapter 3](https://learning.oreilly.com/library/view/head-first-design/9781492077992/ch03.html#the_decorator_pattern_decorating_object) for a review.
+
+So what can you do? It’s times like these that you can fall back on OO design principles to look for clues. Remember, our first principle deals with change and guides us to _identify the aspects that vary and separate them from what stays the same_.
+
+##### ![Images](media/Images-2.png) BRAIN POWER
+
+How might you take all the parts of your application that instantiate concrete classes and separate or encapsulate them from the rest of your application?
 
 # Identifying the aspects that vary
 
 Let’s say you have a pizza shop, and as a cutting-edge pizza store owner in Objectville you might end up writing some code like this:
 
-![Images](media/Images-13.png)
+![Images](media/Images-31.png)
 
-![Images](media/Images-9.png)
+![Images](media/Images-20.png)
 
 **But you need more than one type of pizza...**
 
 So then you’d add some code that _determines_ the appropriate type of pizza and then goes about _making_ the pizza:
 
-![Images](media/Images-13.png)
+![Images](media/Images-24.png)
 
 # But the pressure is on to add more pizza types
 
 You realize that all of your competitors have added a couple of trendy pizzas to their menus: the Clam Pizza and the Veggie Pizza. Obviously you need to keep up with the competition, so you’ll add these items to your menu. And you haven’t been selling many Greek pizzas lately, so you decide to take that off the menu:
 
-![Images](media/Images-13.png)
+![Images](media/Images-24.png)
 
 Clearly, dealing with _which_ concrete class is instantiated is really messing up our orderPizza() method and preventing it from being closed for modification. But now that we know what is varying and what isn’t, it’s probably time to encapsulate it.
 
@@ -29,7 +64,7 @@ Clearly, dealing with _which_ concrete class is instantiated is really messing
 
 So now we know we’d be better off moving the object creation out of the orderPizza() method. But how? Well, what we’re going to do is take the creation code and move it out into another object that is only going to be concerned with creating pizzas.
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 **We’ve got a name for this new object: we call it a Factory.**
 
@@ -41,9 +76,9 @@ We’ve still got a few details to fill in here; for instance, what does the ord
 
 We’ll start with the factory itself. What we’re going to do is define a class that encapsulates the object creation for all pizzas. Here it is...
 
-![Images](media/Images-13.png)
+![Images](media/Images-31.png)
 
-# There are no Dumb Questions
+# there are no Dumb Questions
 
 **Q: What’s the advantage of this? It looks like we’re just pushing the problem off to another object.**
 
@@ -57,78 +92,31 @@ And, don’t forget, we’re also just about to remove the concrete instantiatio
 
 **A:** Defining a simple factory as a static method is a common technique and is often called a static factory. Why use a static method? Because you don’t need to instantiate an object to make use of the create method. But it also has the disadvantage that you can’t subclass and change the behavior of the create method.
 
-# Reworking the Pizza Store class
+# Reworking the PizzaStore class
 
 Now it’s time to fix up our client code. What we want to do is rely on the factory to create the pizzas for us. Here are the changes:
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 ##### ![Images](media/Images-2.png) BRAIN POWER
 
 We know that object composition allows us to change behavior dynamically at runtime (among other things) because we can swap in and out implementations. How might we be able to use that in the PizzaStore? What factory implementations might we be able to swap in and out?
 
+###### NOTE
+
+We don’t know about you, but we’re thinking New York, Chicago, and California style pizza factories (let’s not forget New Haven, too).
+
 # The Simple Factory defined
 
-<mark style="background: #FF5582A6;">The Simple Factory isn’t actually a Design Pattern; it’s more of a programming idiom. </mark>But it is commonly used, so we’ll give it a Head First Pattern Honorable Mention. Some developers do mistake this idiom for the Factory Pattern, but the next time that happens you can subtly show you know your stuff; just don’t strut as you educate them on the distinction.
+The Simple Factory isn’t actually a Design Pattern; it’s more of a programming idiom. But it is commonly used, so we’ll give it a Head First Pattern Honorable Mention. Some developers do mistake this idiom for the Factory Pattern, but the next time that happens you can subtly show you know your stuff; just don’t strut as you educate them on the distinction.
 
 ![Images](media/Images.png)
 
 Just because Simple Factory isn’t a REAL pattern doesn’t mean we shouldn’t check out how it’s put together. Let’s take a look at the class diagram of our new Pizza Store:
 
-![Images](media/Images-13.png)
+![Images](media/Images-22.png)
 
 Think of Simple Factory as a warm-up. Next, we’ll explore two heavy-duty patterns that are both factories. But don’t worry, there’s more pizza to come!
-
-### Code Snippets
-``` java
-public class PizzaStore {  
-    SimplePizzaFactory factory;  
-    PizzaStore(SimplePizzaFactory factory){  
-        this.factory = factory;  
-    }  
-    public Pizza orderPizza(String type){  
-        Pizza pizza;  
-        pizza = factory.createPizza(type);  
-        pizza.prepare();  
-        pizza.bake();  
-        pizza.cut();  
-        pizza.box();  
-        return pizza;  
-    }  
-}
-```
-
-``` java
-
-public class SimplePizzaFactory {  
-    public Pizza createPizza(String type) {  
-        Pizza pizza = null;  
-        if(type.equals("cheese")){  
-            pizza =  new CheesePizza();  
-        }  
-        else if(type.equals("pepperoni")){  
-            pizza =  new PepperoniPizza();  
-        }  
-        else if(type.equals("clam")){  
-            pizza = new ClamPizza();  
-        }  
-        else if(type.equals("veggie")){  
-            pizza = new VeggiePizza();  
-        }  
-        return pizza;  
-    }  
-}
-```
- 
-``` java  
-public interface Pizza {  
-    void prepare();  
-    void bake();  
-    void cut();  
-    void box();  
-}
-```
-
 
 ###### NOTE
 
@@ -144,7 +132,7 @@ But what about regional differences? Each franchise might want to offer differen
 
 Yes, different areas of the US serve very different styles of pizza—from the deep-dish pizzas of Chicago, to the thin crust of New York, to the cracker-like pizza of California (some would say topped with fruits and nuts).
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 ## We’ve seen one approach...
 
@@ -152,7 +140,7 @@ If we take out SimplePizzaFactory and create three different factories—NYPizza
 
 Let’s see what that would look like...
 
-![Images](media/Images-13.png)
+![Images](media/Images-21.png)
 
 ## But you’d like a little more quality control...
 
@@ -162,7 +150,7 @@ Rethinking the problem a bit, you see that what you’d really like to do is cre
 
 In our early code, before the SimplePizzaFactory, we had the pizza-making code tied to the PizzaStore, but it wasn’t flexible. So, how can we have our pizza and eat it too?
 
-![Images](media/Images-13.png)
+![Images](media/Images-18.png)
 
 # A framework for the pizza store
 
@@ -172,7 +160,7 @@ What we’re going to do is put the createPizza() method back into PizzaStore, b
 
 First, let’s look at the changes to the PizzaStore:
 
-![Images](media/Images-16.png)
+![Images](media/Images-30.png)
 
 Now we’ve got a store waiting for subclasses; we’re going to have a subclass for each regional type (NYPizzaStore, ChicagoPizzaStore, CaliforniaPizzaStore) and each subclass is going to make the decision about what makes up a pizza. Let’s take a look at how this is going to work.
 
@@ -182,13 +170,13 @@ Remember, the Pizza Store already has a well-honed order system in the orderPizz
 
 What varies among the regional Pizza Stores is the style of pizzas they make—New York pizza has thin crust, Chicago pizza has thick, and so on—and we are going to push all these variations into the createPizza() method and make it responsible for creating the right kind of pizza. The way we do this is by letting each subclass of Pizza Store define what the createPizza() method looks like. So, we’ll have a number of concrete subclasses of Pizza Store, each with its own pizza variations, all fitting within the Pizza Store framework and still making use of the well-tuned orderPizza() method.
 
-![Images](media/Images-13.png)
+![Images](media/Images-28.png)
 
-![Images](media/Images-13.png)
+![Images](media/Images-26.png)
 
 Well, think about it from the point of view of the PizzaStore’s orderPizza() method: it is defined in the abstract PizzaStore, but concrete types are only created in the subclasses.
 
-![Images](media/Images-8.png)
+![Images](media/Images-30.png)
 
 Now, to take this a little further, the orderPizza() method does a lot of things with a Pizza object (like prepare, bake, cut, box), but because Pizza is abstract, orderPizza() has no idea what real concrete classes are involved. In other words, it’s decoupled!
 
@@ -206,7 +194,7 @@ Being a franchise has its benefits. You get all the PizzaStore functionality for
 
 Here’s the New York regional style:
 
-![Images](media/Images-13.png)
+![Images](media/Images-31.png)
 
 ###### NOTE
 
@@ -222,17 +210,17 @@ We’ve knocked out the NYPizzaStore; just two more to go and we’ll be ready t
 
 With just a couple of transformations to the PizzaStore class, we’ve gone from having an object handle the instantiation of our concrete classes to a set of subclasses that are now taking on that responsibility. Let’s take a closer look:
 
-![Images](media/Images-13.png)
+![Images](media/Images-31.png)
 
 ##### ![Inline](media/Inline-2.png) CODE UP CLOSE
 
 A factory method handles object creation and encapsulates it in a subclass. This decouples the client code in the superclass from the object creation code in the subclass.
 
-![Images](media/Images-13.png)
+![Images](media/Images-36.png)
 
 ## Let’s see how it works: ordering pizzas with the pizza factory method
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 ## So how do they order?
 
@@ -249,15 +237,15 @@ A factory method handles object creation and encapsulates it in a subclass. Th
 
 ![Images](media/Images-3.png)
 
-![Images](media/Images-13.png)
+![Images](media/Images-26.png)
 
 # We’re just missing one thing: Pizzas!
 
 ## Our Pizza Store isn’t going to be very popular without some pizzas, so let’s implement them
 
-![Images](media/Images-13.png)
+![Images](media/Images-36.png)
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 ###### NOTE
 
@@ -267,13 +255,13 @@ If you lose this URL, you can always quickly find it in the Intro section.
 
 ## Now we just need some concrete subclasses...how about defining New York and Chicago-style cheese pizzas?
 
-![Images](media/Images-13.png)
+![Images](media/Images-24.png)
 
 # You’ve waited long enough. Time for some pizzas!
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 # It’s finally time to meet the Factory Method Pattern
 
@@ -281,11 +269,11 @@ All factory patterns encapsulate object creation. The Factory Method Pattern enc
 
 ## The Creator classes
 
-![Images](media/Images-17.png)
+![Images](media/Images-34.png)
 
 ## The Product classes
 
-![Images](media/Images-13.png)
+![Images](media/Images-29.png)
 
 # View Creators and Products in Parallel
 
@@ -293,7 +281,7 @@ For every concrete Creator, there’s typically a whole set of products that it 
 
 Let’s look at the two parallel class hierarchies and see how they relate:
 
-![Images](media/Images-17.png)
+![Images](media/Images-27.png)
 
 ###### NOTE
 
@@ -303,7 +291,7 @@ The factory method is the key to encapsulating this knowledge.
 
 We need another kind of pizza for those crazy Californians (crazy in a _good_ way, of course). Draw another parallel set of classes that you’d need to add a new California region to our PizzaStore.
 
-![Images](media/Images-9.png)
+![Images](media/Images-30.png)
 
 Okay, now write the five _most bizarre_ things you can think of to put on a pizza. Then, you’ll be ready to go into business making pizza in California!
 
@@ -333,7 +321,7 @@ As in the official definition, you’ll often hear developers say, “the Factor
 
 You could ask them what “decides” means, but we bet you now understand this better than they do!
 
-![Images](media/Images-13.png)
+![Images](media/Images-32.png)
 
 # there are no Dumb Questions
 
@@ -399,7 +387,7 @@ When you directly instantiate an object, you are depending on its concrete class
 
 If we draw a diagram representing that version of the PizzaStore and all the objects it depends on, here’s what it looks like:
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 # The Dependency Inversion Principle
 
@@ -439,13 +427,13 @@ How can we get those instantiations out of the orderPizza() method? Well, as we 
 
 So, after we’ve applied the Factory Method Pattern, our diagram looks like this:
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 After applying Factory Method, you’ll notice that our high-level component, the PizzaStore, and our low-level components, the pizzas, both depend on Pizza, the abstraction. Factory Method is not the only technique for adhering to the Dependency Inversion Principle, but it is one of the more powerful ones.
 
 **Where’s the “inversion” in Dependency Inversion Principle?**
 
-![Images](media/Images-13.png)
+![Images](media/Images-32.png)
 
 The “inversion” in the name Dependency Inversion Principle is there because it inverts the way you typically might think about your OO design. Look at the diagram on the previous page. Notice that the low-level components now depend on a higher-level abstraction. Likewise, the high-level component is also tied to the same abstraction. So, the top-to-bottom dependency chart we drew a couple of pages back has inverted itself, with both high-level and low-level modules now depending on the abstraction.
 
@@ -455,17 +443,17 @@ Let’s also walk through the thinking behind the typical design process and see
 
 Okay, so you need to implement a Pizza Store. What’s the first thought that pops into your head?
 
-![Images](media/Images-13.png)
+![Images](media/Images-29.png)
 
 Right, you start at the top and follow things down to the concrete classes. But, as you’ve seen, you don’t want your pizza store to know about the concrete pizza types, because then it’ll be dependent on all those concrete classes!
 
 Now, let’s “invert” your thinking...instead of starting at the top, start at the Pizzas and think about what you can abstract.
 
-![Images](media/Images-9.png)
+![Images](media/Images-29.png)
 
 Right! You are thinking about the abstraction _Pizza._ So now, go back and think about the design of the Pizza Store again.
 
-![Images](media/Images-13.png)
+![Images](media/Images-32.png)
 
 Close. But to do that you’ll have to rely on a factory to get those concrete classes out of your Pizza Store. Once you’ve done that, your different concrete pizza types depend only on an abstraction, and so does your store. We’ve taken a design where the store depended on concrete classes and inverted those dependencies (along with your thinking).
 
@@ -498,13 +486,13 @@ But, if you internalize these guidelines and have them in the back of your mind 
 
 If, on the other hand, a class you write is likely to change, you have some good techniques like Factory Method to encapsulate that change.
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 # Meanwhile, back at the Pizza Store...
 
 The design for the Pizza Store is really shaping up: it’s got a flexible framework and it does a good job of adhering to design principles.
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 Now, the key to Objectville Pizza’s success has always been fresh, quality ingredients, and what you’ve discovered is that with the new framework your franchises have been following your _procedures_, but a few franchises have been substituting inferior ingredients in their pizzas to lower costs and increase their margins. You know you’ve got to do something, because in the long term this is going to hurt the Objectville brand!
 
@@ -518,7 +506,7 @@ So how are you going to ensure each franchise is using quality ingredients? You�
 
 Now there’s only one problem with this plan: the franchises are located in different regions and what is red sauce in New York is not red sauce in Chicago. So, you have one set of ingredients that needs to be shipped to New York and a _different_ set that needs to be shipped to Chicago. Let’s take a closer look:
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 # Families of ingredients...
 
@@ -526,7 +514,7 @@ New York uses one set of ingredients and Chicago another. Given the popularity o
 
 For this to work, you’re going to have to figure out how to handle families of ingredients.
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 ###### NOTE
 
@@ -538,7 +526,7 @@ Now we’re going to build a factory to create our ingredients; the factory will
 
 Let’s start by defining an interface for the factory that is going to create all our ingredients:
 
-![Images](media/Images-13.png)
+![Images](media/Images-32.png)
 
 **With that interface, here’s what we’re going to do:**
 
@@ -553,7 +541,7 @@ Let’s start by defining an interface for the factory that is going to create a
 
 Okay, here’s the implementation for the New York ingredient factory. This factory specializes in Marinara Sauce, Reggiano Cheese, Fresh Clams, etc.
 
-![Images](media/Images-17.png)
+![Images](media/Images-25.png)
 
 ##### ![Inline](media/Inline.png) SHARPEN YOUR PENCIL
 
@@ -565,7 +553,7 @@ Write the ChicagoPizzaIngredientFactory. You can reference the classes below in 
 
 We’ve got our factories all fired up and ready to produce quality ingredients; now we just need to rework our Pizzas so they only use factory-produced ingredients. We’ll start with our abstract Pizza class:
 
-![Images](media/Images-13.png)
+![Images](media/Images-29.png)
 
 # Reworking the pizzas, continued...
 
@@ -577,23 +565,23 @@ So, what you’ll see is that we really don’t need two classes for each pizza;
 
 Here’s the CheesePizza:
 
-![Images](media/Images-17.png)
+![Images](media/Images-32.png)
 
 ##### ![Inline](media/Inline-2.png) CODE UP CLOSE
 
 The Pizza code uses the factory it has been composed with to produce the ingredients used in the pizza. The ingredients produced depend on which factory we’re using. The Pizza class doesn’t care; it knows how to make pizzas. Now, it’s decoupled from the differences in regional ingredients and can be easily reused when there are factories for the Austin, the Nashville, and beyond.
 
-![Images](media/Images-13.png)
+![Images](media/Images-24.png)
 
 Let’s check out the ClamPizza as well:
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 # Revisiting our pizza stores
 
 We’re almost there; we just need to make a quick trip to our franchise stores to make sure they are using the correct Pizzas. We also need to give them a reference to their local ingredient factories:
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 ##### ![Images](media/Images-2.png) BRAIN POWER
 
@@ -615,7 +603,7 @@ From the abstract factory, we derive one or more concrete factories that produce
 
 We then write our code so that it uses the factory to create products. By passing in a variety of factories, we get a variety of implementations of those products. But our client code stays the same.
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 # More pizza for Ethan and Joel...
 
@@ -623,7 +611,7 @@ We then write our code so that it uses the factory to create products. By passin
 
 ## Ethan and Joel can’t get enough Objectville Pizza! What they don’t know is that now their orders are making use of the new ingredient factories. So now when they order...
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 The first part of the order process hasn’t changed at all. Let’s follow Ethan’s order again:
 
@@ -633,7 +621,7 @@ The first part of the order process hasn’t changed at all. Let’s follow Etha
 
 ![Images](media/Images-3.png)
 
-![Images](media/Images-13.png)
+![Images](media/Images-30.png)
 
 # Abstract Factory Pattern defined
 
@@ -645,13 +633,13 @@ We’re adding yet another factory pattern to our pattern family, one that lets 
 
 We’ve certainly seen that Abstract Factory allows a client to use an abstract interface to create a set of related products without knowing (or caring) about the concrete products that are actually produced. In this way, the client is decoupled from any of the specifics of the concrete products. Let’s look at the class diagram to see how this all holds together:
 
-![Images](media/Images-17.png)
+![Images](media/Images-34.png)
 
 **That’s a fairly complicated class diagram; let’s look at it all in terms of our PizzaStore:**
 
-![Images](media/Images-13.png)
+![Images](media/Images-33.png)
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 **Is that a factory method lurking inside the Abstract Factory?**
 
@@ -697,7 +685,7 @@ Good catch! Yes, often the methods of an Abstract Factory are implemented as fac
 
 **Abstract Factory:** That’s true; my interface has to change if new products are added, which I know people don’t like to do....
 
-**Factory Method:** snicker
+**Factory Method:** 
 
 **Abstract Factory:** What are you snickering at, Factory Method?
 
@@ -719,7 +707,7 @@ Good catch! Yes, often the methods of an Abstract Factory are implemented as fac
 
 # Factory Method and Abstract Factory compared
 
-![Images](media/Images-17.png)
+![Images](media/Images-26.png)
 
 ![Images](media/Images-14.png)
 
@@ -798,13 +786,13 @@ It’s been a long chapter. Grab a slice of Pizza and relax while doing this cro
 
 We’ve knocked out the NYPizzaStore; just two more to go and we’ll be ready to franchise! Write the Chicago-style and California-style PizzaStore implementations here:
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 # ![Inline](media/Inline-1.png) Design Puzzle Solution
 
 We need another kind of pizza for those crazy Californians (crazy in a _good_ way, of course). Draw another parallel set of classes that you’d need to add a new California region to our PizzaStore.
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 Okay, now write the five silliest things you can think of to put on a pizza. Then, you’ll be ready to go into business making pizza in California!
 
@@ -814,13 +802,12 @@ Okay, now write the five silliest things you can think of to put on a pizza. The
 
 Let’s pretend you’ve never heard of an OO factory. Here’s a “very dependent” version of PizzaStore that doesn’t use a factory. We need for you to make a count of the number of concrete pizza classes this class is dependent on. If you added California-style pizzas to PizzaStore, how many classes would it be dependent on then? Here’s our solution.
 
-![Images](media/Images-17.png)
+![Images](media/Images-30.png)
 
 ##### ![Inline](media/Inline.png) SHARPEN YOUR PENCIL SOLUTION
 
 Go ahead and write the ChicagoPizzaIngredientFactory; you can reference the classes below in your implementation:
 
-``` java
 public class ChicagoPizzaIngredientFactory
     implements PizzaIngredientFactory
 {
@@ -852,7 +839,6 @@ public class ChicagoPizzaIngredientFactory
         return new FrozenClams();
     }
 }
-```
 
 ![Images](media/Images-15.png)
 

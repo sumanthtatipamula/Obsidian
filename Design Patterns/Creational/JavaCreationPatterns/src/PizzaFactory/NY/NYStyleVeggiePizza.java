@@ -1,6 +1,8 @@
-package PizzaFactory;
+package PizzaFactory.NY;
 
-public class VeggiePizza implements Pizza{
+import PizzaFactory.Pizza;
+
+public class NYStyleVeggiePizza implements Pizza {
     @Override
     public void prepare() {
         System.out.println("Preparing Veggie pizza");
