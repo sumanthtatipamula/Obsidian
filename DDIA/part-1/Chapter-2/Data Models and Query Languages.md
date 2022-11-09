@@ -2,7 +2,7 @@
 > 
 > Ludwig Wittgenstein, _Tractatus Logico-Philosophicus_ (1922)
 
-![](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ch02-map-ebook.png)
+![](media/ch02-map-ebook.png)
 
 Data models are perhaps the most important part of developing software, because they have such a profound effect: not only on how the software is written, but also on how we _think about the problem_ that we are solving.
 
@@ -71,7 +71,7 @@ For example, [Figure 2-1](https://learning.oreilly.com/library/view/designing-
 -   A third option is to encode jobs, education, and contact info as a JSON or XML document, store it on a text column in the database, and let the application interpret its structure and content. In this setup, you typically cannot use the database to query for values inside that encoded column.
     
 
-![ddia 0201](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0201.png)
+![ddia 0201](media/ddia_0201.png)
 
 ###### Figure 2-1. Representing a LinkedIn profile using a relational schema. Photo of Bill Gates courtesy of Wikimedia Commons, Ricardo Stuckert, Agência Brasil.
 
@@ -125,7 +125,7 @@ The JSON representation has better _locality_ than the multi-table schema in 
 
 The one-to-many relationships from the user profile to the user’s positions, educational history, and contact information imply a tree structure in the data, and the JSON representation makes this tree structure explicit (see [Figure 2-2](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_json_tree)).
 
-![ddia 0202](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0202.png)
+![ddia 0202](media/ddia_0202.png)
 
 ###### Figure 2-2. One-to-many relationships forming a tree structure.
 
@@ -167,13 +167,13 @@ Recommendations
 
 Say you want to add a new feature: one user can write a recommendation for another user. The recommendation is shown on the résumé of the user who was recommended, together with the name and photo of the user making the recommendation. If the recommender updates their photo, any recommendations they have written need to reflect the new photo. Therefore, the recommendation should have a reference to the author’s profile.
 
-![ddia 0203](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0203.png)
+![ddia 0203](media/ddia_0203.png)
 
 ###### Figure 2-3. The company name is not just a string, but a link to a company entity. Screenshot of linkedin.com.
 
 [Figure 2-4](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_datamodels_many_to_many) illustrates how these new features require many-to-many relationships. The data within each dotted rectangle can be grouped into one document, but the references to organizations, schools, and other users need to be represented as references, and require joins when queried.
 
-![ddia 0204](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0204.png)
+![ddia 0204](media/ddia_0204.png)
 
 ###### Figure 2-4. Extending résumés with many-to-many relationships.
 
@@ -337,11 +337,11 @@ Say you have a website about animals in the ocean. The user is currently viewing
 <ul
 ```
 
-[![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO1-1)
+[![1](media/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO1-1)
 
 The selected item is marked with the CSS class `"selected"`.
 
-[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO1-2)
+[![2](media/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO1-2)
 
 `<p>Sharks</p>` is the title of the currently selected page.
 
@@ -392,7 +392,7 @@ In PostgreSQL you might express that query like this:
 SELECT
 ```
 
-[![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO2-1)
+[![1](media/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO2-1)
 
 The `date_trunc('month', timestamp)` function determines the calendar month containing `timestamp`, and returns another timestamp representing the beginning of that month. In other words, it rounds a timestamp down to the nearest month.
 
@@ -404,27 +404,27 @@ The same can be expressed with MongoDB’s MapReduce feature as follows:
 db
 ```
 
-[![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-5)
+[![1](media/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-5)
 
 The filter to consider only shark species can be specified declaratively (this is a MongoDB-specific extension to MapReduce).
 
-[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-1)
+[![2](media/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-1)
 
 The JavaScript function `map` is called once for every document that matches `query`, with `this` set to the document object.
 
-[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/3.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-2)
+[![3](media/3.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-2)
 
 The `map` function emits a key (a string consisting of year and month, such as `"2013-12"` or `"2014-1"`) and a value (the number of animals in that observation).
 
-[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/4.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-3)
+[![4](media/4.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-3)
 
 The key-value pairs emitted by `map` are grouped by key. For all key-value pairs with the same key (i.e., the same month and year), the `reduce` function is called once.
 
-[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/5.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-4)
+[![5](media/5.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-4)
 
 The `reduce` function adds up the number of animals from all observations in a particular month.
 
-[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/6.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-6)
+[![6](media/6.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO3-6)
 
 The final output is written to the collection `monthlySharkReport`.
 
@@ -476,7 +476,7 @@ In the examples just given, all the vertices in a graph represent the same kind 
 
 In this section we will use the example shown in [Figure 2-5](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_datamodels_graph). It could be taken from a social network or a genealogical database: it shows two people, Lucy from Idaho and Alain from Beaune, France. They are married and living in London.
 
-![ddia 0205](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0205.png)
+![ddia 0205](media/ddia_0205.png)
 
 ###### Figure 2-5. Example of graph-structured data (boxes represent vertices, arrows represent edges).
 
@@ -586,27 +586,27 @@ Since SQL:1999, this idea of variable-length traversal paths in a query can be e
 WITH
 ```
 
-[![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-1)
+[![1](media/1.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-1)
 
 First find the vertex whose `name` property has the value `"United States"`, and make it the first element of the set of vertices `in_usa`.
 
-[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-2)
+[![2](media/2.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-2)
 
 Follow all incoming `within` edges from vertices in the set `in_usa`, and add them to the same set, until all incoming `within` edges have been visited.
 
-[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/3.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-3)
+[![3](media/3.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-3)
 
 Do the same starting with the vertex whose `name` property has the value `"Europe"`, and build up the set of vertices `in_europe`.
 
-[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/4.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-4)
+[![4](media/4.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-4)
 
 For each of the vertices in the set `in_usa`, follow incoming `born_in` edges to find people who were born in some place within the United States.
 
-[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/5.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-5)
+[![5](media/5.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-5)
 
 Similarly, for each of the vertices in the set `in_europe`, follow incoming `lives_in` edges to find people who live in Europe.
 
-[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/6.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-6)
+[![6](media/6.png)](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#co_data_models_and_query_languages_CO4-6)
 
 Finally, intersect the set of people born in the USA with the set of people living in Europe, by joining them.
 
@@ -761,7 +761,7 @@ One possible way of applying the rules is thus:
 
 By repeated application of rules 1 and 2, the `within_recursive` predicate can tell us all the locations in North America (or any other location name) contained in our database. This process is illustrated in [Figure 2-6](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_datalog_naive).
 
-![ddia 0206](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781491903063/files/assets/ddia_0206.png)
+![ddia 0206](media/ddia_0206.png)
 
 ###### Figure 2-6. Determining that Idaho is in North America, using the Datalog rules from [Example 2-11](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#fig_datalog_query).
 
