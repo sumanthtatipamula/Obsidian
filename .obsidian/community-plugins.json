@@ -26,5 +26,6 @@
   "drawio-obsidian",
   "obsidian-footnotes",
   "obsidian-linter",
-  "obsidian-plantuml"
+  "obsidian-plantuml",
+  "obsidian-vault-statistics-plugin"
 ]

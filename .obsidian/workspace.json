@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "88b8a01cbdeedcde",
+            "id": "0f571fa9675f5196",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md"
+                "file": "DDIA/part-1/Chapter-2/Data Models and Query Languages.md"
               }
             }
           },
@@ -174,10 +174,10 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "88b8a01cbdeedcde",
+  "active": "0f571fa9675f5196",
   "lastOpenFiles": [
-    "Design Patterns/Creational/Creational Design Patterns Intro.md",
     "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+    "Design Patterns/Creational/Creational Design Patterns Intro.md",
     "media/Images-12.png",
     "media/Images-9.png",
     "media/Images-8.png",
