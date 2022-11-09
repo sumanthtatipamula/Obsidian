@@ -17,4 +17,7 @@
 	2. Avoiding ambiguity (e.g., if there are several cities with the same name)
 	3. Avoiding duplication of  the human-meaningful information in every record that uses it.
 	4. It never needs to change, even if the information it identifies changes
-	5. 
+	5. Removing such duplication is the key idea behind _normalization_ in databases.
+9. In Document Model support for joins are often weak and joins are not needed for one-to-many relationship
+10. IBM IMS data model is based on hierarchical model, which has some remarkable similarities to the JSON model used by document databases.
+	1. It worked well for one-to-many relationships 

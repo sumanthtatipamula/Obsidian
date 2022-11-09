@@ -294,6 +294,22 @@
           "lastUpdated": 1667954412837
         }
       }
+    },
+    "one-to-many": {
+      "one-to-many": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667956280535
+        }
+      }
+    },
+    "relationship": {
+      "relationship": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667956283905
+        }
+      }
     }
   }
 }
