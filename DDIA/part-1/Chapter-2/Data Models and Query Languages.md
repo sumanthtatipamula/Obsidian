@@ -79,8 +79,44 @@ For a data structure like a résumé, which is mostly a self-contained _documen
 
 ##### Example 2-1. Representing a LinkedIn profile as a JSON document
 
-```
+
+``` json
 {
+  "user_id": 251,
+  "first_name": "Bill",
+  "last_name": "Gates",
+  "summary": "Co-chair of the Bill & Melinda Gates... Active blogger.",
+  "region_id": "us:91",
+  "industry_id": 131,
+  "photo_url": "/p/7/000/253/05b/308dd6e.jpg",
+  "positions": [
+    {
+      "job_title": "Co-chair",
+      "organization": "Bill & Melinda Gates Foundation"
+    },
+    {
+      "job_title": "Co-founder, Chairman",
+      "organization": "Microsoft"
+    }
+  ],
+  "education": [
+    {
+      "school_name": "Harvard University",
+      "start": 1973,
+      "end": 1975
+    },
+    {
+      "school_name": "Lakeside School, Seattle",
+      "start": null,
+      "end": null
+    }
+  ],
+  "contact_info": {
+    "blog": "https://www.gatesnotes.com/",
+    "twitter": "https://twitter.com/BillGates"
+  }
+}
+
 ```
 
 Some developers feel that the JSON model reduces the impedance mismatch between the application code and the storage layer. However, as we shall see in [Chapter 4](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch04.html#ch_encoding), there are also problems with JSON as a data encoding format. The lack of a schema is often cited as an advantage; we will discuss this in [“Schema flexibility in the document model”](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#sec_datamodels_schema_flexibility).
@@ -112,8 +148,7 @@ If the user interface has free-text fields for entering the region and the indus
 
 Whether you store an ID or a text string is a question of duplication. When you use an ID, the information that is meaningful to humans (such as the word _Philanthropy_) is stored in only one place, and everything that refers to it uses an ID (which only has meaning within the database). When you store the text directly, you are duplicating the human-meaningful information in every record that uses it.
 
-The advantage of using an ID is that because it has no meaning to humans, it never needs to change: the ID can remain the same, even if the information it identifies changes. Anything that is meaningful to humans may need to change sometime in the future—and if that information is duplicated, all the redundant copies need to be updated. That incurs write overheads, and risks inconsistencies (where some copies of the information are updated but others aren’t). Removing such duplication is the key idea behind _normalization_ in databases.[ii](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch02.html#idm45085125394752)
-
+The advantage of using an ID is that because it has no meaning to humans, it never needs to change: the ID can remain the same, even if the information it identifies changes. Anything that is meaningful to humans may need to change sometime in the future—and if that information is duplicated, all the redundant copies need to be updated. That incurs write overheads, and risks inconsistencies (where some copies of the information are updated but others aren’t). Removing such duplication is the key idea behind _normalization_ in databases.
 ###### NOTE
 
 Database administrators and developers love to argue about normalization and denormalization, but we will suspend judgment for now. In [Part III](https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/part03.html#part_systems) of this book we will return to this topic and explore systematic ways of dealing with caching, denormalization, and derived data.

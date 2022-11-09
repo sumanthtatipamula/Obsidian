@@ -11,4 +11,10 @@
 	1. The first problem that may occur is that is data type mismatch means the programming language attribute data type may differ from the attribute data type in the data model.
 	2. The second problem that may occur is because the results of most queries are sets or multisets of tuples and each tuple is formed of a sequence of attribute values. In the program, it is necessary to access the individual data values within individual tuples for printing or processing.
 6. Object-relational mapping (ORM) frameworks like ActiveRecord and Hibernate reduce the amount of boilerplate code required for this translation layer, but they can’t completely hide the differences between the two models
-7. Later versions of the SQL added support for structred datatypes and XML data
+7. Later versions of the SQL added support for structured datatypes and XML data. i.e JSON or XML document is can be stored on a text column in the database and its application responsibility to interpret its structure and content.
+8. The advantages of using ids in place where it is referred in other tables than actual text.
+	1. Consistent style and spelling across profiles
+	2. Avoiding ambiguity (e.g., if there are several cities with the same name)
+	3. Avoiding duplication of  the human-meaningful information in every record that uses it.
+	4. It never needs to change, even if the information it identifies changes
+	5. 
