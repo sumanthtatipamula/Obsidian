@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "40c4d2eaa9ea134e",
+            "id": "cbef3138c6c9efbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "Coding/Tips based on DataStructure.md",
                 "mode": "source",
                 "source": false
               }
@@ -21,6 +21,24 @@
           }
         ],
         "stacked": true
+      },
+      {
+        "id": "6f37502d62b74a88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "288a05b5d1964130",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.00827407836914,
-    "collapsed": true
+    "width": 451.00827407836914
   },
   "right": {
     "id": "b5a8a7850980d5b0",
@@ -107,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -175,17 +192,17 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "40c4d2eaa9ea134e",
+  "active": "288a05b5d1964130",
   "lastOpenFiles": [
-    "Design Patterns/Creational/Factory/Summary.md",
+    "Coding/Tips based on DataStructure.md",
+    "Coding/1451.md",
+    "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
+    "DDIA/part-1/Chapter-1/Essential Terms.md",
     "Design Patterns/Creational/Factory/Factory Pattern - head-first-design.md",
+    "Design Patterns/Creational/Factory/Summary.md",
     "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
     "media/ddia_0206.png",
     "media/ddia_0205.png",
-    "media/ddia_0203.png",
-    "media/ddia_0202.png",
-    "media/ddia_0201.png",
-    "DDIA/part-1/Chapter-2/Summary.md",
-    "Design Patterns/Creational/Creational Design Patterns Intro.md"
+    "media/ddia_0203.png"
   ]
 }
