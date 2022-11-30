@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Coding/Tips based on DataStructure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Coding/Tips based on DataStructure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Coding/Tips based on DataStructure.md"
               }
             }
           },
@@ -192,8 +192,9 @@
     "width": 287,
     "collapsed": true
   },
-  "active": "288a05b5d1964130",
+  "active": "cbef3138c6c9efbd",
   "lastOpenFiles": [
+    "Untitled.md",
     "Coding/Tips based on DataStructure.md",
     "Coding/1451.md",
     "DDIA/part-1/Chapter-1/Reliable, Scalable, and Maintainable Applications.md",
@@ -202,7 +203,6 @@
     "Design Patterns/Creational/Factory/Summary.md",
     "DDIA/part-1/Chapter-2/Data Models and Query Languages.md",
     "media/ddia_0206.png",
-    "media/ddia_0205.png",
-    "media/ddia_0203.png"
+    "media/ddia_0205.png"
   ]
 }
